@@ -1,5 +1,5 @@
-import "./assets/ComponentsStyle.css";
-import website from "./assets/website.png";
+import "./Card.scss";
+import websiteImage from "../assets/website.png";
 
 function Card() {
   return (
@@ -11,7 +11,7 @@ function Card() {
         <h1>Test Next</h1>
         <p>Mode of Effective Communication With Stakeholders</p>
         <div className="img-div">
-          <img src={website} alt="" />
+          <img src={websiteImage} alt="website image" />
         </div>
       </div>
     </div>

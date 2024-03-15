@@ -1,4 +1,4 @@
-import "./assets/GlossyButton.css";
+import "./GlossyButton.scss";
 
 function GlossyButton() {
   return <button className="glossy-button">Work</button>;
