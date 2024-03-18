@@ -8,7 +8,8 @@ function Card() {
       <div className="content">
         <div className="sub-border"></div>
         <div className="content-bg"></div>
-        <h1>Test Next</h1>
+        <div className="overlay"></div>
+        <h1>Moved.</h1>
         <p>Mode of Effective Communication With Stakeholders</p>
         <div className="img-div">
           <img src={websiteImage} alt="website image" />
