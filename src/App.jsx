@@ -7,6 +7,11 @@ function App() {
     <section className="app">
       <GlossyButton />
       <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
     </section>
   );
 }

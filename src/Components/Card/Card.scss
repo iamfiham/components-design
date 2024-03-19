@@ -1,4 +1,3 @@
-$mobile-size: 400px;
 $content-bg: #171717;
 
 .card {
@@ -10,6 +9,10 @@ $content-bg: #171717;
   padding: 7.5px;
   position: relative;
   cursor: pointer;
+
+  &:active {
+    border: solid 1px rgba(255, 255, 255, 0.25);
+  }
 
   .main-border {
     position: absolute;
@@ -47,13 +50,19 @@ $content-bg: #171717;
       &:hover {
         border: solid 1px rgba(255, 255, 255, 0.35);
       }
+      .content-bg {
+        opacity: 0;
+      }
+      &:hover .content-bg {
+        opacity: 0.7;
+      }
     }
 
-    // @media all and (max-width: $mobile-size) {
-    //   border: solid 1px rgba(255, 255, 255, 0.35);
-    // }
     @media (hover: none) {
       border: solid 1px rgba(255, 255, 255, 0.35);
+      .content-bg {
+        opacity: 0.7;
+      }
     }
 
     h1 {
@@ -73,7 +82,7 @@ $content-bg: #171717;
     }
     .img-div {
       width: 90%;
-      aspect-ratio: 4/3;
+      // aspect-ratio: 4/3;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
       border: solid 1px rgba(255, 255, 255, 0.1);
@@ -82,12 +91,15 @@ $content-bg: #171717;
       overflow: hidden;
       z-index: 5;
       align-self: center;
+      transition: transform 0.4s ease;
 
       img {
         width: 100%;
         display: block;
-        // transform: translateY(20px);
       }
+    }
+    &:hover > .img-div {
+      transform: translateY(-10px);
     }
     .sub-border {
       @extend .main-border;
@@ -113,28 +125,7 @@ $content-bg: #171717;
       z-index: 3;
     }
 
-    @media (hover: hover) {
-      .content-bg {
-        opacity: 0;
-      }
-
-      &:hover .content-bg {
-        opacity: 0.7;
-      }
-    }
-    @media (hover: none) {
-      .content-bg {
-        opacity: 0.7;
-      }
-    }
-
-    @media all and (max-width: $mobile-size) {
-      .content-bg {
-        opacity: 0.7;
-      }
-    }
     .overlay {
-      // background-color: red;
       height: 500px;
       position: absolute;
       width: 100%;

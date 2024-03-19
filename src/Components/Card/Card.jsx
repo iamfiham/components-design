@@ -1,5 +1,5 @@
 import "./Card.scss";
-import websiteImage from "../assets/website.png";
+import websiteImage from "./assets/website.png";
 
 function Card() {
   return (
