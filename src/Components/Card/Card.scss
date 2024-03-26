@@ -135,6 +135,8 @@ $content-bg: #171717;
       background-image: linear-gradient(to top, $content-bg, transparent);
       z-index: 7;
       border-radius: inherit;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
     }
   }
 }

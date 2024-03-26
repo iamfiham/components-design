@@ -1,0 +1,52 @@
+$white-90: rgba(255, 255, 255, 0.9);
+$white-50: rgba(255, 255, 255, 0.5);
+$white-25: rgba(255, 255, 255, 0.25);
+
+.card2 {
+  width: 300px;
+  padding: 1px;
+  border-radius: 8px;
+  background: linear-gradient(to bottom right, $white-25, transparent 50% 50%, $white-25);
+
+  .content {
+    background: linear-gradient(to bottom right, rgb(25, 25, 25), rgb(20, 20, 20), rgb(25, 25, 25));
+    width: 100%;
+    border-radius: inherit;
+    padding: 1.75rem 1.25rem;
+    position: relative;
+    overflow: hidden;
+
+    @mixin text-style($font-size, $font-color, $font-weight, $margin-bottom) {
+      color: $font-color;
+      font-weight: $font-weight;
+      font-size: $font-size;
+      margin-bottom: $margin-bottom;
+      line-height: 1;
+    }
+
+    h2 {
+      @include text-style(2.5rem, $white-90, 600, 2.5rem);
+      letter-spacing: -1px;
+    }
+    h3 {
+      @include text-style(1.25rem, $white-90, 400, 0.625rem);
+    }
+    h4 {
+      @include text-style(1rem, $white-50, 400, 2.5rem);
+    }
+    h5 {
+      @include text-style(0.8rem, $white-50, 400, 0rem);
+      line-height: 1.25;
+    }
+
+    .border {
+      position: absolute;
+      left: 50%;
+      top: 0%;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent);
+      transform: translateX(-50%);
+    }
+  }
+}
