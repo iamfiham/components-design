@@ -1,7 +1,7 @@
-import "./GlossyButton.scss";
+import './GlossyButton.scss';
 
 function GlossyButton() {
-  return <button className="glossy-button">Work</button>;
+  return <button className='glossy-button'>Work</button>;
 }
 
 export default GlossyButton;

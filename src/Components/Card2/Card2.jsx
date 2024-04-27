@@ -1,4 +1,5 @@
 import "./Card2.scss";
+
 function Card2() {
   return (
     <div className="card2">
