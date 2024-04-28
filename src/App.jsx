@@ -4,6 +4,7 @@ import './App.css';
 // import GlossyButton from './Components/GlossyButton/GlossyButton';
 // import ProductViewPage from './Components/productViewPage/ProductViewPage';
 import SkeletonProfileCard from './Components/skeletonProfileCard/SkeletonProfileCard';
+import ProfilePopup from './Components/profilePopup/ProfilePopup';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <Card2 /> 
       <ProductViewPage/>
       */}
-      <SkeletonProfileCard />
+      {/* <SkeletonProfileCard /> */}
+      <ProfilePopup />
     </section>
   );
 }
