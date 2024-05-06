@@ -1,5 +1,6 @@
 import './App.css';
-import NextJsCard from './Components/card3/NextJsCard';
+import ChartCard from './Components/card4/ChartCard';
+// import NextJsCard from './Components/card3/NextJsCard';
 // import ImageGrid from './Components/imageGrid/ImageGrid';
 // import Card from './Components/Card/Card';
 // import Card2 from './Components/Card2/Card2';
@@ -19,8 +20,9 @@ function App() {
       <SkeletonProfileCard /> 
       <ProfilePopup /> 
       <ProjectCard />
-      <ImageGrid /> */}
-      <NextJsCard />
+      <ImageGrid /> 
+      <NextJsCard />*/}
+      <ChartCard />
     </section>
   );
 }

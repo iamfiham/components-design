@@ -6,7 +6,7 @@ function NextJsCard() {
       <div className='w-[30%] h-[1px] absolute -top-[1px] left-1/2 -translate-x-1/2 bg-gradient-to-l from-transparent via-sky-400 to-transparent'></div>
       <div className='p-5 bg-gradient-to-b from-neutral-800 to-neutral-900 rounded-lg group-hover:to-neutral-950 transition-all'>
         <img src={arc} alt='' className='h-10 mb-14' />
-        <h2 className='text-xl text-white font-bold tracking-tighter leading-none mb-3'>Arc Browser</h2>
+        <h2 className='text-xl text-white font-bold tracking-tighter leading-none mb-3'>AIR Table</h2>
         <p className='text-sm  text-neutral-500'>
           The library for web and native user interfaces. Next.js is built on the latest React features, including Server Components and Actions.
         </p>
