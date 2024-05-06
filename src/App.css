@@ -1,10 +1,10 @@
 .app {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  gap: 2rem;
-  padding-block: 3rem;
+  justify-items: flex-start;
+  align-items: center;
+  gap: 4rem;
+  padding-block: 5rem;
   min-height: 100vh;
   background-color: rgb(10, 10, 10, 0.025);
   background-color: rgb(10, 10, 10);
