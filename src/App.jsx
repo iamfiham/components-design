@@ -8,6 +8,7 @@ import GlossyButton from './Components/GlossyButton/GlossyButton';
 import SkeletonProfileCard from './Components/skeletonProfileCard/SkeletonProfileCard';
 import ProfilePopup from './Components/profilePopup/ProfilePopup';
 import ProjectCard from './Components/projectCard/ProjectCard';
+import GoogleLogIn from './Components/googleLogIn/GoogleLogIn';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <ImageGrid />
       <NextJsCard />
       <ChartCard />
+      <GoogleLogIn />
     </section>
   );
 }
