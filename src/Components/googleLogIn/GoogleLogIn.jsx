@@ -15,7 +15,7 @@ function GoogleLogIn() {
           <p className='text-xs/none  text-neutral-600'>Please tick all boxes in permission step</p>
         </div>
       </div>
-      <button className='shadow-inner shadow-neutral-700 w-full py-4 bg-neutral-800 rounded-lg text-neutral-300 flex gap-4 items-center justify-center text-[0.95rem]/none tracking-tight mb-3'>
+      <button className='shadow-inner shadow-neutral-700 w-full py-4 bg-neutral-800 rounded-lg text-neutral-300 flex gap-3 items-center justify-center text-[0.95rem]/none tracking-tight mb-3 font-semibold'>
         <FaGoogle className='fill-neutral-300' /> Continue with Google
       </button>
       <p className='text-xs'>
