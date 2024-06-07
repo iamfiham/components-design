@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+import tailwindcssAnimationDelay from "tailwindcss-animation-delay";
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -9,13 +12,20 @@ export default {
           "100%": { backgroundPosition: "-100% 0" },
         },
         borderAnimation: {
-          "0%": { borderOpacity: 1 },
-          "100%": { borderOpacity: 0 },
+          "0%": { width: "60px", borderColor: "rgba(0,0,0,0)" },
+          "5%": { width: "77px", borderColor: "#d4d4d4" },
+          "100%": { width: "400px", borderColor: "rgba(0,0,0,0)" },
         },
       },
+
       animation: {
         skeleton: "skeletonKeyframe 2s infinite linear",
-        border: "borderAnimation 2s infinite linear",
+        border: "borderAnimation 3.5s infinite linear",
+      },
+
+      animationDelay: {
+        2100: "2100ms",
+        2800: "2800ms",
       },
 
       backgroundImage: {
@@ -29,5 +39,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [tailwindcssAnimationDelay],
 };

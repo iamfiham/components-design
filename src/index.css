@@ -4,21 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .clip-animation {
-    animation: clipAnimation 1s infinite ease-in-out;
-  }
-  @keyframes clipAnimation {
-    0% {
-      clip-path: circle(100%);
-    }
-
-    100% {
-      clip-path: circle(0%);
-    }
-  }
-}
-
 *,
 ::after,
 ::before {
