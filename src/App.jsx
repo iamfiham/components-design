@@ -9,6 +9,7 @@ import SkeletonProfileCard from './Components/skeletonProfileCard/SkeletonProfil
 import ProfilePopup from './Components/profilePopup/ProfilePopup';
 import ProjectCard from './Components/projectCard/ProjectCard';
 import GoogleLogIn from './Components/googleLogIn/GoogleLogIn';
+import ZoomUi from './Components/zoomUi/ZoomUi';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <NextJsCard />
       <ChartCard />
       <GoogleLogIn />
+      <ZoomUi />
     </section>
   );
 }
