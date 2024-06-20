@@ -13,10 +13,10 @@ function ZoomUi() {
         <HiOutlineUserCircle className=" relative z-30 stroke-neutral-900 text-4xl" />
         {/* <span className=" absolute left-1/2 top-1/2 z-10 aspect-square w-56 -translate-x-1/2 -translate-y-1/2 bg-whiteoverlay " /> */}
         <span className="absolute left-1/2 top-1/2 z-0 aspect-square w-16 -translate-x-1/2 -translate-y-1/2 animate-border rounded-full border border-solid border-neutral-300/0" />
-        <span className="animation-delay-700 absolute left-1/2 top-1/2 z-0 aspect-square w-16 -translate-x-1/2 -translate-y-1/2 animate-border rounded-full border border-solid border-neutral-300/0" />
-        <span className="animation-delay-1400 absolute left-1/2 top-1/2 z-0 aspect-square w-16 -translate-x-1/2 -translate-y-1/2 animate-border rounded-full border border-solid border-neutral-300/0" />
-        <span className="animation-delay-2100 absolute left-1/2 top-1/2 z-0 aspect-square w-16 -translate-x-1/2 -translate-y-1/2 animate-border rounded-full border border-solid border-neutral-300/0" />
-        <span className="animation-delay-2800 absolute left-1/2 top-1/2 z-0 aspect-square w-16 -translate-x-1/2 -translate-y-1/2 animate-border rounded-full border border-solid border-neutral-300/0" />
+        <span className="absolute left-1/2 top-1/2 z-0 aspect-square w-16 -translate-x-1/2 -translate-y-1/2 animate-border rounded-full border border-solid border-neutral-300/0 animation-delay-700" />
+        <span className="absolute left-1/2 top-1/2 z-0 aspect-square w-16 -translate-x-1/2 -translate-y-1/2 animate-border rounded-full border border-solid border-neutral-300/0 animation-delay-1400" />
+        <span className="absolute left-1/2 top-1/2 z-0 aspect-square w-16 -translate-x-1/2 -translate-y-1/2 animate-border rounded-full border border-solid border-neutral-300/0 animation-delay-2100" />
+        <span className="absolute left-1/2 top-1/2 z-0 aspect-square w-16 -translate-x-1/2 -translate-y-1/2 animate-border rounded-full border border-solid border-neutral-300/0 animation-delay-2800" />
       </span>
       <h2 className="relative z-10 mb-2 text-base/none font-bold text-neutral-900">
         Share link to start a meeting
@@ -32,7 +32,7 @@ function ZoomUi() {
         <p
           onClick={handleCopy}
           title="Copy the provided link"
-          className="cursor-pointer border-0 border-l  border-solid  border-neutral-300 p-2 text-center text-xs/none  text-neutral-500 active:bg-neutral-100 "
+          className="cursor-pointer border-0 border-l  border-solid  border-neutral-300 p-2 text-center text-sm/none  text-neutral-500 active:bg-neutral-100 "
         >
           Copy link
         </p>

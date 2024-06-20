@@ -1,24 +1,27 @@
-import note from './assets/note.jpg';
-import {IoIosArrowRoundForward} from 'react-icons/io';
+import note from "./assets/note.png";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 function ProjectCard() {
   return (
-    <div className='bg-white w-[400px] shadow-[0px_10px_18px_-5px_rgba(0,0,0,0.08),inset_0px_0px_50px_50px_rgba(0,0,0,0.01)] rounded-xl overflow-hidden group/card '>
-      <div className='p-8 pb-0'>
-        <h1 className='text-xl text-neutral-900 font-bold mb-3'>Note Taking App</h1>
-        <p className='text-sm text-neutral-400 mb-6'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. In impedit ipsa perferendis a eos placeat ipsum vitae nemo excepturi commodi!
+    <div className="group/card w-[400px] overflow-hidden rounded-lg bg-white shadow-[0px_10px_18px_-5px_rgba(0,0,0,0.08)]">
+      <div className="relative z-40 p-10 pb-0">
+        <h1 className="mb-4 text-2xl/none font-semibold tracking-tight text-neutral-900">
+          Note Taking App
+        </h1>
+        <p className="mb-8 text-base/snug text-neutral-500">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In impedit
+          ipsa perferendis a eos placeat ipsum vitae nemo excepturi commodi!
         </p>
-        <button className='text-blue-400 gap-2 text-xs flex items-center'>
-          View Site <IoIosArrowRoundForward className='scale-150' />
+        <button className="flex items-center gap-2 text-xs text-blue-400">
+          View Site <IoIosArrowRoundForward className="scale-150" />
         </button>
       </div>
-      <div className='aspect-[3/2] relative overflow-hidden'>
-        <div className='absolute w-full h-full bg-gradient-to-b z-20 from-white to-transparent to-50% pointer-events-none' />
+      <div className="relative z-30 grid place-items-center overflow-hidden p-10 pb-0">
+        <div className="pointer-events-none absolute z-20 h-full w-full bg-gradient-to-t from-white to-transparent to-40%" />
         <img
           src={note}
-          alt=''
-          className='border border-solid border-neutral-100 w-4/5 z-10 rounded-md object-top  object-cover absolute top-8 left-1/2 -translate-x-1/2 shadow-[-10px_15px_20px_-5px_rgba(0,0,0,0.1)] origin-top  group-hover/card:-translate-y-12 group-hover/card:-translate-x-[calc(50%+12px)] -rotate-[15deg] transition-all '
+          alt=""
+          className="group-hover/card:shadow-top3 z-10 aspect-[3/2]  w-full rounded-xl  rounded-b-none  border-4 border-b-0 border-solid  border-neutral-800 object-contain object-top shadow-top2 transition-all"
         />
       </div>
     </div>

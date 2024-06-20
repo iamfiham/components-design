@@ -38,7 +38,11 @@ $content-bg: #171717;
     transition: all 0.25s ease;
     background-size: 100%;
     background-position: center;
-    background-image: radial-gradient(circle at 50% -30%, rgb(50, 50, 50), transparent 90%);
+    background-image: radial-gradient(
+      circle at 50% -30%,
+      rgb(50, 50, 50),
+      transparent 90%
+    );
     padding: clamp(1.5rem, -0.5rem + 8vw, 2rem);
     padding-bottom: 0px;
     display: flex;
@@ -82,7 +86,7 @@ $content-bg: #171717;
     }
     .img-div {
       width: 90%;
-      // aspect-ratio: 4/3;
+      aspect-ratio: 4/3;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
       border: solid 1px rgba(255, 255, 255, 0.1);
@@ -116,7 +120,11 @@ $content-bg: #171717;
     .content-bg {
       width: 100%;
       height: 100%;
-      background-image: radial-gradient(circle at 50% -30%, rgb(175, 175, 175), transparent 90%);
+      background-image: radial-gradient(
+        circle at 50% -30%,
+        rgb(175, 175, 175),
+        transparent 90%
+      );
       position: absolute;
       top: 0px;
       left: 0px;
